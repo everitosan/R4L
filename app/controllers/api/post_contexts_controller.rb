@@ -1,6 +1,7 @@
 module API
   class PostContextsController < ApplicationController
-
+    before_action :getContext, only:[:show, :update, :destroy]
+    
     def index
       @PT = PostContext.all
       respond_to do |format|
@@ -20,17 +21,15 @@ module API
     end
 
     def show
-      post_context = PostContext.find(params[:id])
       respond_to do |format|
-        format.json { render json: post_context, status: :ok}
+        format.json { render json: @post_context, status: :ok}
       end
     end
 
     def update
-      post_context = PostContext.find(params[:id])
       respond_to do |format|
-        if post_context.update(post_context_params)
-          format.json {render json: post_context, status: :ok}
+        if @post_context.update(post_context_params)
+          format.json {render json: @post_context, status: :ok}
         else
           format.json {render status: 400}
         end
@@ -38,12 +37,15 @@ module API
     end
 
     def destroy
-      post_context = PostContext.find(params[:id])
-      if post_context.destroy
+      if @post_context.destroy
         head 204
       else
         head 400
       end
+    end
+
+    def getContext
+      @post_context = PostContext.find(params[:id])
     end
 
     private

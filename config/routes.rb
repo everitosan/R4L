@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         list_only.resources :post_contexts
         list_only.resources :post_categories
         list_only.resources :users
-        # list_only.resources :posts
+        list_only.resources :posts
         # list_only.resources :type_goals
         # list_only.resources :statisctics
         # list_only.resources :goals

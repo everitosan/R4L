@@ -33,7 +33,7 @@ class StatisticsControllerTest < ActionController::TestCase
     assert_equal 201, response.status
   end
 
-  test "get a post category" do
+  test "get a statistic" do
     get :show,
     :id => @statistic.id
 
@@ -43,7 +43,7 @@ class StatisticsControllerTest < ActionController::TestCase
     assert_equal Mime::JSON, response.content_type
   end
 
-  test "update a post category" do
+  test "update a statistic" do
     put :update,
     :id => @statistic.id,
     :statistic => {:quantity => 40 }
@@ -52,7 +52,7 @@ class StatisticsControllerTest < ActionController::TestCase
     assert_equal 40, @statistic.reload.quantity
   end
 
-  test "delete a post category" do
+  test "delete a statistic" do
     delete :destroy,
     :id => @statistic
 

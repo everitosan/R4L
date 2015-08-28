@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   has_many :posts
   has_many :statistics
+  has_many :goals
 
   validates :name,
             presence: true

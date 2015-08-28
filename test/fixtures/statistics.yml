@@ -1,0 +1,10 @@
+allan_statistic:
+  user: Allan
+  goal_category: weight
+  quantity: 50
+# column: value
+#
+gabo_statistic:
+  user: Gabo
+  goal_category: glucose
+  quantity: 20

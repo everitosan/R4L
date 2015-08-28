@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   has_many :posts
   has_many :statistics
   has_many :goals
+  has_one :personal_project
 
   validates :name,
             presence: true

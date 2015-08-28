@@ -1,0 +1,17 @@
+Gabo_post:
+  user: Gabo
+  text: Hola amigo
+  post_context: profile
+  contextId: 77710760 #post en el profile de allan
+  post_category: health
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  like: 3
+# column: value
+#
+Allan_post:
+  user: allan
+  text: Vamos a correr
+  post_context: profile
+  contextId: 609512294 #post en el profile de gabo
+  post_category: health

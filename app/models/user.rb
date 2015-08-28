@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :statistics
   has_many :goals
   has_one :personal_project
+  has_one :payment
 
   validates :name,
             presence: true

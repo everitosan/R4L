@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       with_options only: [:index, :create, :new, :edit, :show, :update, :destroy] do |list_only|
         list_only.resources :post_contexts
         list_only.resources :post_categories
-        # list_only.resources :users
+        list_only.resources :users
         # list_only.resources :posts
         # list_only.resources :type_goals
         # list_only.resources :statisctics

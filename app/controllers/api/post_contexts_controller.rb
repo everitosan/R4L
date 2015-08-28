@@ -1,52 +1,26 @@
 module API
-  class PostContextsController < ApplicationController
-    before_action :getContext, only:[:show, :update, :destroy]
-    
+  class PostContextsController < ApiController
+
     def index
-      @PT = PostContext.all
-      respond_to do |format|
-        format.json {render json:@PT, status: :ok}
-      end
+      gIndex(PostContext)
     end
 
     def create
-      post_context = PostContext.new(post_context_params)
-      respond_to do |format|
-        if post_context.save
-          format.json {render json: post_context, status: :created}
-        else
-          format.json {render status: 400}
-        end
-      end
+      gCreate(PostContext, post_context_params)
     end
 
     def show
-      respond_to do |format|
-        format.json { render json: @post_context, status: :ok}
-      end
+      gShow(PostContext)
     end
 
     def update
-      respond_to do |format|
-        if @post_context.update(post_context_params)
-          format.json {render json: @post_context, status: :ok}
-        else
-          format.json {render status: 400}
-        end
-      end
+      gUpdate(PostContext, post_context_params)
     end
 
     def destroy
-      if @post_context.destroy
-        head 204
-      else
-        head 400
-      end
+      gDestroy(PostContext)
     end
 
-    def getContext
-      @post_context = PostContext.find(params[:id])
-    end
 
     private
       def post_context_params

@@ -1,0 +1,17 @@
+Allan:
+  name: alan
+  age: 20
+  email: alan@gmail.com
+  address: somwhere
+  zipCode: 14000
+  country: méxico
+  telephone: 5540128869
+
+Gabo:
+  name: Gabolonio
+  age: 30
+  email: gabo@gmail.com
+  address: somwhere only
+  zipCode: 94850
+  country: méxico
+  telephone: 54980387

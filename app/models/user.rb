@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
   has_one :personal_project
   has_one :payment
 
+  has_one :event
+  #has_many :meetings
+  #has_many :events, through: :meetings
+
   validates :name,
             presence: true
   validates :age,

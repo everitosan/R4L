@@ -6,8 +6,7 @@ class User < ActiveRecord::Base
   has_one :payment
 
   has_one :event
-  #has_many :meetings
-  #has_many :events, through: :meetings
+  has_and_belongs_to_many :events
 
   validates :name,
             presence: true

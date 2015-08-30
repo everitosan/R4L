@@ -1,8 +1,7 @@
 class Event < ActiveRecord::Base
 
-  #has_many :meetings
-  #has_many :users, through: :meetings
   belongs_to :user
+  has_and_belongs_to_many :users
 
   validates :name,
             presence: true

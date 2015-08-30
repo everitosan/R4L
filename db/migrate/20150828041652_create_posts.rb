@@ -8,7 +8,7 @@ class CreatePosts < ActiveRecord::Migration
       t.references :post_category, index: true
       t.string :image
       t.string :video
-      t.float :like, default: 0
+      t.float :likes, default: 0
 
       t.timestamps null: false
     end

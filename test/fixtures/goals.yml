@@ -1,0 +1,13 @@
+allan_goal:
+  user: Allan
+  goal_category: weight
+  start: 100
+  current: 50
+  desire: 45
+
+gabo_goal:
+  user: Allan
+  goal_category: glucose
+  start: 30
+  current: 20
+  desire: 18

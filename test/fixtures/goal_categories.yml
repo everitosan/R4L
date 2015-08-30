@@ -1,0 +1,11 @@
+weight:
+  name: peso
+
+glucose:
+  name: glucose
+
+triglyceride:
+  name: triglyceride
+
+cholesterol:
+  name: cholesterol

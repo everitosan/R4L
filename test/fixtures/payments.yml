@@ -1,0 +1,5 @@
+allan_payment:
+  user: Allan
+  payment_transaction: 3456
+  method: credit_card
+  amount: 303.33

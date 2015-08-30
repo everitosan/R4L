@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'home#index'
+
   constraints subdomain: 'api' do
     namespace :api, path:'/' do
       with_options only: [:index, :create, :new, :edit, :show, :update, :destroy] do |list_only|

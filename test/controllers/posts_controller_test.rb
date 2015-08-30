@@ -8,7 +8,7 @@ class PostsControllerTest < ActionController::TestCase
     @user = users(:Allan)
     @post_context = post_contexts(:profile)
     @post_category = post_categories(:health)
-    @postF = posts(:Allan_post)
+    @postF = posts(:Gabo_post)
   end
 
   test "get all posts" do
@@ -48,9 +48,9 @@ class PostsControllerTest < ActionController::TestCase
 
     put :update,
     :id => @postF.id,
-    :post => { :text => 'nocierto'}
+    :post => { :image => 'nocierto'}
 
-    assert_equal 'nocierto', @postF.reload.text
+    assert_equal 'nocierto', @postF.reload.image
     assert_equal 200, response.status
 
   end

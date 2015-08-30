@@ -12,7 +12,7 @@ Rails.application.routes.draw do
         list_only.resources :personal_projects
         list_only.resources :payments
         list_only.resources :events
-        # list_only.resources :groups
+        list_only.resources :groups
       end
     end
   end

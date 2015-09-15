@@ -1,0 +1,14 @@
+dom-module(id="main-app")
+  link(rel="stylesheet" href="main-app.css")
+  template
+    paper-drawer-panel
+      div(drawer id="menuContainer")
+        menu-component
+      div(main)
+        paper-drawer-panel(right-drawer)
+          div(drawer id="adds")
+            |anuncios
+          div(main)
+            |main
+  script(src="main-app.js")
+          

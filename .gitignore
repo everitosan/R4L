@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+#Ignore node modules
+/node_modules
+#Ignore front end generated files
+/front-dev/dev
+/front-dev/prod
+/vendor/assets/components
+/app/assets/components
+/app/assets/images/profile

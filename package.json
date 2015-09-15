@@ -1,0 +1,38 @@
+{
+  "name": "r4l",
+  "version": "1.0.0",
+  "description": "\"front end for Run4Life\"",
+  "main": "Grunt.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everitosan/R4L.git"
+  },
+  "author": "\"evesan\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/everitosan/R4L/issues"
+  },
+  "homepage": "https://github.com/everitosan/R4L#readme",
+  "dependencies": {
+    "debowerify": "^1.3.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-copy": "^0.8.1",
+    "include-all": "^0.1.6"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "grunt-babel": "^5.0.1",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-stylus": "^0.22.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

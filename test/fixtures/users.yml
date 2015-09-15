@@ -1,11 +1,12 @@
 Allan:
-  name: alan
+  name: Alan Vaca Strella
   age: 20
   email: alan@gmail.com
   address: somwhere
   zipCode: 14000
   country: méxico
   telephone: 5540128869
+  picProfile: 128.jpg
 
 Gabo:
   name: Gabolonio

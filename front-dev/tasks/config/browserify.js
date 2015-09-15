@@ -6,9 +6,9 @@ module.exports = function (grunt){
      },
      files: [{
        expand: true,
-       cwd: 'front-dev/app/scripts/',
+       cwd: 'front-dev/app/components/',
        src: '**/*.js',
-       dest:'front-dev/dev/scripts/' ,
+       dest:'app/assets/components/' ,
        ext: '.js'
      }]
     },

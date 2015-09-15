@@ -6,6 +6,8 @@ module.exports = function (grunt) {
           'app/assets/images/**/*.png',
           'app/assets/images/**/*.gif',
           'app/assets/images/**/*.ico',
+          'app/assets/javascripts/dev',
+          'app/assets/components/'
         ],
     prod : ['front-dev/prod', 'app/assets/javascripts/prod']
   });

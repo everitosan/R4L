@@ -10,7 +10,18 @@ module API
     end
 
     def show
-      gShow(User)
+
+      @user = User.includes(:groups).find(params[:id])
+      @userResponse  =  {
+        :name =>@user.name,
+        :picProfile => @user.picProfile,
+        :groups => @user.groups,
+        :events => @user.events
+      }.to_json
+
+      respond_to do |format|
+        format.json { render json: @userResponse, status: :ok}
+      end
     end
 
     def update

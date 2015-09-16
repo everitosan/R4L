@@ -1,0 +1,8 @@
+dom-module#group-component
+  link(rel="stylesheet", href="group-component.css")
+  template
+    paper-card(elevation="1" image="{{group.image}}")
+      div.card-header-image
+        paper-button(raised)
+          |{{group.name}}
+  script(src="group-component.js")

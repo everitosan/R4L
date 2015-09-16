@@ -1,5 +1,8 @@
 dom-module#group-list
   link(rel='stylesheet', href='group-list.css')
   template
-    p Grupos
+    p.sectionTitle Grupos
+    template(is="dom-repeat", items="{{groups}}")
+      group-component(group="{{item}}")
+    div.group-list-footer
   script(src='group-list.js')

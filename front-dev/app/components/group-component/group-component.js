@@ -1,9 +1,9 @@
 Polymer({
-  is: "user-data",
+  is: 'group-component',
   properties: {
-    data: {
+    group: {
       type: Object,
       notify: true
     }
   }
-});
+})

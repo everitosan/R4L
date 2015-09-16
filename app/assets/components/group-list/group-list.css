@@ -1,1 +1,1 @@
-:host{display:block;}:host p{float:right;margin:1em}
+:host{display:block;font-family:"Hero";}:host .sectionTitle{text-align:right;margin:.5em;font-size:1.5em;text-transform:uppercase}:host .group-list-footer{background:#454e56;height:20px;width:100%}

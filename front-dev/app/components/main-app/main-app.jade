@@ -9,6 +9,12 @@ dom-module(id="main-app")
           div(drawer id="adds")
             |anuncios
           div(main)
-            |main
+          paper-header-panel(mode='waterfall-tall')
+            paper-toolbar
+              .title
+              .title.bottom
+                h1#name-title foo
+            #foobar
+              h2 This isn't being shown
   script(src="main-app.js")
           

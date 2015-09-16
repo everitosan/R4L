@@ -1,1 +1,1 @@
-<dom-module id="group-list"><link rel="stylesheet" href="group-list.css"/><template><p>Grupos</p></template><script src="group-list.js"></script></dom-module>
+<dom-module id="group-list"><link rel="stylesheet" href="group-list.css"/><template><p class="sectionTitle">Grupos</p><template is="dom-repeat" items="{{groups}}"><group-component group="{{item}}"></group-component></template><div class="group-list-footer"></div></template><script src="group-list.js"></script></dom-module>

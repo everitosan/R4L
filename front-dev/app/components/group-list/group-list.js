@@ -1,3 +1,9 @@
 Polymer({
-  is: "group-list"
+  is: "group-list",
+  properties: {
+    groups: {
+      type: Array,
+      notify: true
+    }
+  }
 });

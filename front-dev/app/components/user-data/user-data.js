@@ -1,3 +1,9 @@
 Polymer({
-  is: "user-data"
+  is: "user-data",
+  properties: {
+    data: {
+      type: Object,
+      notify: true
+    }
+  }
 });

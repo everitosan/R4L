@@ -1,0 +1,13 @@
+dom-module#counterdown-slider
+  link(rel="stylesheet", href="counterdown-slider.css")
+  template
+    div
+      div(class="s2") 1
+      div(class="s8")
+        |Restan:
+        span 
+          |364 
+        | días 
+      div(class="s2") 356
+    paper-slider(min="0" max="365" value="110")
+  script(src="counterdown-slider.js")

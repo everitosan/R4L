@@ -1,6 +1,48 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  font-family: Verdana, Helvetica;
+body, html {
+  font-family: "Hero Light";
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #EEEFF0;
+}
+
+header {
+  background-color: #454E56;
+  width:  100%;
+  height : 48px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #main.paper-drawer-panel,
+.paper-drawer-panel-0 .left-drawer.paper-drawer-panel > #drawer.paper-drawer-panel {
+  top: 48px;
+  box-sizing: border-box;
+}
+#drawer.paper-drawer-panel > [drawer] {
+  height: 92.8%;
+  overflow: scroll;
+}
+
+#r4lApp {
+  width: 100%;
+  height: 100%;
+}
+
+#adds {
+  border-left: #AFBCC2 3px solid;
+  height: 100%;
+
+  .add {
+    display: block;
+    margin: 1em auto;
+    background: white;
+    height: 150px;
+    width: 95%;
+  }
 }

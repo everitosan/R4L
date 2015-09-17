@@ -1,0 +1,14 @@
+dom-module#post-card
+  link(rel="stylesheet" href="post-card.css")
+  template
+    paper-card(elevation="1")
+      div.card-content 
+        iron-image(class="pic" src="{{data.userPic}}" sizing="contain")
+        iron-image(class="category" src="{{data.category}}" sizing="contain")
+        div(class="cardText") 
+          div(class="author"){{data.user}}
+          div{{data.text}}
+      div.card-actions
+        span{{data.likes}}
+        paper-icon-button(on-click="plusLike" style="color: #AFBCC2;" icon="thumb-up")
+  script(src="post-card.js")

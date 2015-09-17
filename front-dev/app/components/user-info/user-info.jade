@@ -1,7 +1,7 @@
 dom-module#user-info
   link(rel='stylesheet', href='user-info.css')
   template
-    img#settingsButton(src='icons/settings.png', alt='settings')
+    paper-icon-button(id="settingsButton", src="icons/settings.png")
     figure.profilePicContainer
       iron-image.profilePic(src='{{info.picProfile}}', sizing='contain', preload='', fade='')
     h2.name {{info.name}}

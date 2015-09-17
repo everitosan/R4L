@@ -1,17 +1,95 @@
 Gabo_post:
   user: Gabo
+  text:  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, id vero consequuntur pariatur eligendi culpa, asperiores quasi a nisi, ducimus numquam unde blanditiis repellat aut nobis atque quas obcaecati tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, id vero consequuntur pariatur eligendi culpa, asperiores quasi a nisi, ducimus numquam unde blanditiis repellat aut nobis atque quas obcaecati tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, id vero consequuntur pariatur eligendi culpa, asperiores quasi a nisi, ducimus numquam unde blanditiis repellat aut nobis atque quas obcaecati tempore.
+  post_context: profile
+  contextId: 77710760 #post en el profile de Allan
+  post_category: health
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  likes: 3
+
+Michael:
+  user: Michael
+  text: And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+  post_context: profile
+  contextId: 77710760 #post en el profile de Allan
+  post_category: sport
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  likes: 15
+
+Gabo_post2:
+  user: Gabo
   text: Hola amigo
   post_context: profile
-  contextId: 77710760 #post en el profile de allan
+  contextId: 77710760 #post en el profile de Allan
+  post_category: health
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  likes: 3
+
+Gabo_post3:
+  user: Gabo
+  text: Hola amigo
+  post_context: profile
+  contextId: 77710760 #post en el profile de Allan
+  post_category: health
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  likes: 3
+
+Gabo_post4:
+  user: Gabo
+  text: Hola amigo
+  post_context: profile
+  contextId: 77710760 #post en el profile de Allan
+  post_category: health
+  image: r4l-dev.com/kjh1423kj4h2d.webm
+  video: r4l-dev.com/kjh1423kj4h2d.png
+  likes: 3
+
+Gabo_post5:
+  user: Gabo
+  text: Hola amigo
+  post_context: profile
+  contextId: 77710760 #post en el profile de Allan
   post_category: health
   image: r4l-dev.com/kjh1423kj4h2d.webm
   video: r4l-dev.com/kjh1423kj4h2d.png
   likes: 3
 # column: value
 #
-Allan_post:
-  user: allan
+Allan_post1:
+  user: Allan
   text: Vamos a correr
   post_context: profile
   contextId: 609512294 #post en el profile de gabo
-  post_category: health
+  post_category: run
+
+Allan_post2:
+  user: Allan
+  text: Vamos a correr
+  post_context: profile
+  contextId: 609512294 #post en el profile de gabo
+  post_category: run
+
+Allan_post3:
+  user: Allan
+  text: Vamos a correr
+  post_context: profile
+  contextId: 609512294 #post en el profile de gabo
+  post_category: run
+
+Allan_post4:
+  user: Allan
+  text: Vamos a correr
+  post_context: profile
+  contextId: 609512294 #post en el profile de gabo
+  post_category: run
+
+Allan_post5:
+  user: Allan
+  text: Vamos a correr
+  post_context: profile
+  contextId: 609512294 #post en el profile de gabo
+  post_category: run

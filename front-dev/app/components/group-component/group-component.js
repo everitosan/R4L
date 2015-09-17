@@ -1,9 +1,13 @@
-Polymer({
-  is: 'group-component',
-  properties: {
-    group: {
-      type: Object,
-      notify: true
+class GroupComponent {
+  beforeRegister () {
+    this.is = "group-component";
+    this.properties = {
+      group: {
+        type: Object,
+        notify: true
+      }
     }
   }
-})
+}
+
+Polymer(GroupComponent);

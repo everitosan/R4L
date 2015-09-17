@@ -1,9 +1,13 @@
-Polymer({
-  is: "user-data",
-  properties: {
-    data: {
-      type: Object,
-      notify: true
-    }
+class UserData {
+  beforeRegister (){
+    this.is = "user-data";
+    this.properties = {
+      data: {
+        type: Object,
+        notify: true
+      }
+    };
   }
-});
+}
+
+Polymer(UserData);

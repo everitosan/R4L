@@ -1,6 +1,12 @@
-Polymer({
-  is: "menu-component",
-  loaded : function (request) {
-    console.log(request.detail.response);
+class MenuComponent {
+  beforeRegister () {
+    this.is = "menu-component";
   }
-});
+
+  loaded (request) {
+  //  console.log(request.detail.response);
+  }
+
+}
+
+Polymer(MenuComponent);

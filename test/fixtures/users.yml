@@ -16,3 +16,13 @@ Gabo:
   zipCode: 94850
   country: méxico
   telephone: 54980387
+
+Michael:
+  name: Michael Ruff
+  age: 20
+  email: michRuff@gmail.com
+  address: somwhere only
+  zipCode: 23909
+  country: USA
+  telephone: 09388992
+  picProfile: assets/profile/Michael.jpg

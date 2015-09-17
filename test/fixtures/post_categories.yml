@@ -1,2 +1,8 @@
 health:
   name: health
+
+run:
+  name: run
+
+sport:
+  name: sport

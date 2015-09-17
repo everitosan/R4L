@@ -1,0 +1,11 @@
+dom-module#news-feed
+  link(rel="stylesheet" href="news-feed.css")
+  template
+    div(id="newsFeed" style="max-height: 500px;" class="s12")
+      iron-ajax(auto, url="http://api.r4l-dev.com:3000/posts", on-response="loaded", last-response="{{data}}")
+      
+      post-component
+      iron-list( items="{{data}}" as="item")
+        template
+          post-card(data="{{item}}")
+  script(src="news-feed.js")

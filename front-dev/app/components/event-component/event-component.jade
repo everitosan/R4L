@@ -1,0 +1,21 @@
+dom-module#event-component
+  link(rel="stylesheet" href="event-component.css")
+  template
+  
+    paper-card
+      div.card-content
+        h3(class$="{{event.category}}") {{event.name}}
+        div
+          span 
+            img(class="dot" src="icons/dot.png")
+            span{{event.date.1}}
+            | 
+            span{{event.date.2}}
+          |  -  
+          span
+           {{event.hour}}
+      div.card-actions
+        paper-button(noink) 
+          a(href$="{{event.url}}")
+            |Ver más
+  script(src="event-component.js")

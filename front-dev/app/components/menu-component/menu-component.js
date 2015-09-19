@@ -4,8 +4,8 @@ class MenuComponent {
   }
 
   loaded (request) {
-  //  console.log(request.detail.response);
-  }
+    console.log( request.detail.response );
+}
 
 }
 

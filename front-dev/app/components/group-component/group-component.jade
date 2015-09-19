@@ -3,6 +3,7 @@ dom-module#group-component
   template
     paper-card(elevation="1" image="{{group.image}}")
       div.card-header-image
-        paper-button(raised)
-          |{{group.name}}
+        a(href$="{{group.url}}")
+          paper-button(raised)
+            |{{group.name}}
   script(src="group-component.js")

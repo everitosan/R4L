@@ -19,6 +19,11 @@ header {
   z-index: 1000;
 }
 
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .paper-drawer-panel-0 iron-selector.paper-drawer-panel > #main.paper-drawer-panel,
 .paper-drawer-panel-0 .left-drawer.paper-drawer-panel > #drawer.paper-drawer-panel {
   top: 48px;

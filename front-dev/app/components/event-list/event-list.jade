@@ -1,0 +1,15 @@
+dom-module#event-list
+  link(rel="stylesheet" href="event-list.css")
+  template
+    iron-ajax(
+      auto, 
+      url='http://api.r4l-dev.com:3000/users/90237603.json', 
+      contentType="application/json", 
+      handle-as='json', 
+      last-response='{{info}}', 
+      method='GET', 
+      on-response = "loaded",
+      debounce-duration='300')
+    template(is="dom-repeat", items="{{info.events}}")
+      event-component(event="{{item}}")
+  script(src="event-list.js")

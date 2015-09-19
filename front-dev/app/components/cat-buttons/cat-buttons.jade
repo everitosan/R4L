@@ -1,0 +1,15 @@
+dom-module#cat-buttons
+  link(rel="stylesheet", href="cat-buttons.css")
+  template
+    iron-ajax(
+      auto,
+      url = "http://api.r4l-dev.com:3000/post_categories.json",
+      contentType = "application/json" ,
+      handle-as = "json",
+      on-response = "loaded",
+      method = "GET",
+      debounce-duration ="300",
+      last-response = "{{categories}}")
+    template(is="dom-repeat", items ="{{categories}}")
+      paper-icon-button(src="{{item.name}}")
+  script(src="cat-buttons.js")

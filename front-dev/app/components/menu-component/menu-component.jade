@@ -2,7 +2,7 @@ dom-module#menu-component
   link(rel='stylesheet', href='menu-component.css')
   template
     // Ajax
-    iron-ajax(auto, url='http://api.r4l-dev.com:3000/users/90237603', handle-as='json', last-response='{{info}}', method='GET', on-response='loaded', debounce-duration='300')
+    iron-ajax(auto, url='http://api.r4l-dev.com:3000/users/90237603.json', contentType ="application/json", handle-as='json', last-response='{{info}}', method='GET', debounce-duration='300')
     // User
     user-data(data="{{info}}")
     // Group

@@ -12,16 +12,50 @@ module API
     def show
 
       @user = User.includes(:groups).find(params[:id])
+
       @userResponse  =  {
         :name =>@user.name,
+        :projectUrl => "projects/" + @user.personal_project.id.to_s,
         :picProfile => @user.picProfile,
-        :groups => @user.groups,
-        :events => @user.events
+        :weight => @user.last_weight,
+        :height => @user.last_height,
+        :imc => getIMC(@user.last_height, @user.last_weight),
+        :groups => groupify(@user.groups),
+        :events => eventify(@user.events)
       }.to_json
 
       respond_to do |format|
         format.json { render json: @userResponse, status: :ok}
       end
+    end
+
+    def getIMC (height, weight)
+      return (weight/height**2).to_i
+    end
+
+    def groupify (groupList)
+      @groups = [];
+      groupList.each do |group|
+        @groups.push({
+          :url => "groups/" + group.id.to_s,
+          :image => group.image,
+          :name => group.name
+          });
+      end
+      return @groups
+    end
+
+    def eventify (eventList)
+      @newEventList = [];
+      eventList.each do |event|
+        @newEventList.push({
+          :url => "groups/" + event.id.to_s,
+          :name => event.name,
+          :date => event.dateHour,
+          :category => event.post_category.name
+          })
+      end
+      return @newEventList
     end
 
     def update

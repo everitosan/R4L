@@ -7,7 +7,6 @@ class EventList {
       item.hour = item.date.substring(11, 16);
       item.date = item.date.substr(0,10).split("-");
       item.date[1] = window.filter.montify(item.date[1]);
-      item.url = "events/" + item.id;
     });
   }
 

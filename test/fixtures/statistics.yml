@@ -1,7 +1,12 @@
 allan_statistic:
   user: Allan
   goal_category: weight
-  quantity: 50
+  quantity: 72
+
+allan_statisticHeight:
+  user: Allan
+  goal_category: height
+  quantity: 1.8
 # column: value
 #
 gabo_statistic:

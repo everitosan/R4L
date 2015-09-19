@@ -1,5 +1,13 @@
 first_party:
-  name: primera fiesta
+  name: Primera Fiesta
   info: la primer fiesta de año
-  dateHour: 2010-02-11 11:02:57
+  dateHour: 2015-02-11 11:02:57
   user: Allan
+  post_category: health
+
+Rodada_Enero:
+  name: Rodada Enero
+  info: la primer fiesta de año
+  dateHour: 2015-10-11 11:02:57
+  user: Allan
+  post_category: sport

@@ -1,6 +1,9 @@
 weight:
   name: peso
 
+height:
+  name: altura
+
 glucose:
   name: glucose
 

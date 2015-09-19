@@ -1,22 +1,25 @@
 dom-module#user-info
   link(rel='stylesheet', href='user-info.css')
   template
-    paper-icon-button(id="settingsButton", src="icons/settings.png")
-    figure.profilePicContainer
-      iron-image.profilePic(src='{{info.picProfile}}', sizing='contain', preload='', fade='')
-    h2.name {{info.name}}
-    .personalData
-      div
-        h3 Peso
-        p
-          span {{peso}}
-          span.units Kg
-      div
-        h3 Altura
-        p
-          span {{altura}}
-          span.units M
-      div
-        h3 IMC
-        p {{IMC}}
+    div#userInfo
+      paper-icon-button(id="settingsButton", src="icons/settings.png")
+      figure.profilePicContainer
+        iron-image.profilePic(src='{{info.picProfile}}', sizing='contain', preload='', fade='')
+      h2.name {{info.name}}
+      .personalData
+        div
+          h3 Peso
+          p
+            span {{info.weight}}
+            span.units Kg
+        div
+          h3 Altura
+          p
+            span {{info.height}}
+            span.units M
+        div
+          h3 IMC
+          p {{info.imc}}
+    a(href$="{{info.projectUrl}}")
+      my-project-button
   script(src='user-info.js')

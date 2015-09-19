@@ -8,12 +8,6 @@ class UserInfo {
       }
     };
   }
-
-  ready () {
-    this.peso = "73";
-    this.altura = "1.7";
-    this.IMC = "24";
-  }
 }
 
 Polymer(UserInfo);

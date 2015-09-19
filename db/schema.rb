@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916012207) do
+ActiveRecord::Schema.define(version: 20150919180711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 20150916012207) do
     t.string   "name"
     t.text     "info"
     t.datetime "dateHour"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.integer  "post_category_id"
   end
 
   add_index "events", ["user_id"], name: "index_events_on_user_id", using: :btree
@@ -146,10 +147,12 @@ ActiveRecord::Schema.define(version: 20150916012207) do
     t.string   "country"
     t.string   "telephone"
     t.string   "password"
-    t.boolean  "verified",   default: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.boolean  "verified",    default: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.string   "picProfile"
+    t.float    "last_weight"
+    t.float    "last_height"
   end
 
 end

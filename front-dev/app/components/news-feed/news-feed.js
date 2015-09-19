@@ -8,12 +8,17 @@ class NewsFeed {
       }
     };
   }
+  ready () {
 
+  }
   loaded (request) {
     request.detail.response.forEach(function(item){
       item.category = "assets/icons/" + item.category + ".png";
     });
-    //console.log(request.detail.response);
+
+    let newsFeed = document.getElementById("newsFeed");
+    newsFeed.style.height  = "" + (window.innerHeight-125) + "px";
+
   }
 }
 

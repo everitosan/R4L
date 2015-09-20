@@ -10,27 +10,25 @@ body, html {
   background: #EEEFF0;
 }
 
-header {
+.mainHeader {
   background-color: #454E56;
   width:  100%;
   height : 48px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
 }
 
 a, a:visited {
   color: inherit;
   text-decoration: none;
 }
-
-.paper-drawer-panel-0 iron-selector.paper-drawer-panel > #main.paper-drawer-panel,
-.paper-drawer-panel-0 .left-drawer.paper-drawer-panel > #drawer.paper-drawer-panel {
-  top: 48px;
-  box-sizing: border-box;
+#logo {
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+  }
 }
+
 #drawer.paper-drawer-panel > [drawer] {
-  height: 92.8%;
   overflow: scroll;
 }
 

@@ -9,17 +9,27 @@
   <meta name="viewport" content="width=device-width" >
 </head>
 <body>
-  <header>
-
-  </header>
 
   <section id="r4lApp">
     <template is="dom-bind" id="app">
+
       <paper-drawer-panel>
         <div drawer id="menuContainer">
+          <paper-toolbar>
+            <div class="mainHeader">
+              <a id="logo" href="/">
+                <img src="assets/other/logo.png" alt="R4Llogo">
+              </a>
+            </div>
+          </paper-toolbar>
           <menu-component> </menu-component>
         </div>
         <div main>
+          <paper-toolbar>
+
+            <main-header></main-header>
+
+          </paper-toolbar>
           <iron-grid>
             <div id="main-cards" class="s12 m12 l9">
               <counterdown-slider class="s12"></counterdown-slider>

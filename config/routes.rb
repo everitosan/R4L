@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+  get 'event/show'
+
+  get 'group/show'
+
   root 'home#index'
+
+  get 'project'=>'project#index'
+  get 'groups'=>'group#show'
+  get 'events'=>'event#show'
+  get 'settings'=>'settings#index'
 
   constraints subdomain: 'api' do
     namespace :api, path:'/' do

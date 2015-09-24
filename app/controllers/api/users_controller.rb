@@ -11,11 +11,10 @@ module API
 
     def show
 
-      @user = User.includes(:groups).find(params[:id])
+      @user = User.includes(:groups).includes(:events).find(params[:id])
 
       @userResponse  =  {
         :name =>@user.name,
-        :projectUrl => "projects/" + @user.personal_project.id.to_s,
         :picProfile => @user.picProfile,
         :weight => @user.last_weight,
         :height => @user.last_height,
@@ -37,7 +36,7 @@ module API
       @groups = [];
       groupList.each do |group|
         @groups.push({
-          :url => "groups/" + group.id.to_s,
+          :url => "groups?id=" + group.id.to_s,
           :image => group.image,
           :name => group.name
           });
@@ -49,7 +48,7 @@ module API
       @newEventList = [];
       eventList.each do |event|
         @newEventList.push({
-          :url => "groups/" + event.id.to_s,
+          :url => "events?id=" + event.id.to_s,
           :name => event.name,
           :date => event.dateHour,
           :category => event.post_category.name

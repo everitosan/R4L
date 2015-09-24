@@ -1,0 +1,20 @@
+dom-module#landing-professionals
+  link(rel="stylesheet", href="landing-professionals.css")
+  template
+    h3 Ayuda y soporte de profesionales
+    div(class="pure-g pro-list")
+    iron-ajax(
+      auto
+      url= '/professionals',
+      method = 'GET',
+      content-type="application/json",
+      handle-as = 'json',
+      on-response= 'professinalsGotten',
+      last-response= '{{professionals}}',
+      debounce-duration = '300'
+      )
+      template(is="dom-repeat", items="{{professionals}}")
+        div(class="professional pure-u-1 pure-u-md-1-3")
+          iron-image(sizing="contain" src="{{item.picProfile}}")
+          p {{item.name}}
+  script(src="landing-professionals.js")

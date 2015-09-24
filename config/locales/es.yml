@@ -1,0 +1,35 @@
+es:
+  sessions:
+    new:
+      log_in: 'Log in'
+    create:
+      invalid_credentials: 'Credenciales inválidas'
+      logged_in: 'Bienvenido de vuelta!'
+    destroy:
+      logged_out: 'Hasta Luego!'
+  identities:
+    new:
+      create: 'Registrarse'
+    create:
+      sign_up: 'Bienvenido a tu nueva cuenta!'
+  hello:
+
+
+  home:
+    p1: '· 4 METAS ·'
+    p2: 'UN GRAN PREMIO: VIAJAR A ESPAÑA 1 SEMANA'
+    p3: 'Inscríbete'
+    p4: 'Registra tus metas por tema'
+    p5: 'Muestra tu avance'
+    p6: 'GANA'
+
+    mejora: 'Mejora tu'
+    salud: 'Salud'
+
+    desarrolla: 'Desarrolla tu'
+    actividad: 'Actividad Productiva'
+
+    incrementa: 'Incrementa tus'
+    relaciones: 'Relaciones'
+
+    verm: 'ver más'

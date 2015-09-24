@@ -1,0 +1,43 @@
+dom-module#landing-form
+  link(rel="stylesheet", href="landing-form.css")
+  template
+    paper-material
+      h3 Registrate
+      div.price
+        |Pago único de: $380.00 
+        span MXN
+      form(is="iron-form" id="signUp" method="post")
+        paper-input(class="input" label="Nombre" required)
+        gold-email-input(class="input" label="email" required auto-validate)
+        paper-button Continuar
+      
+      div.form-footer(hidden="{{hideFooter}}")
+        div.text
+          span Si ya te registraste haz
+          paper-button(noink on-click="showLogIn") aquí
+        
+      paper-dialog(
+        id="dialog" 
+        modal
+        exit-animation="fade-out-animation"
+        entry-animation="scale-up-animation")
+        h2 Log in
+        form(is="iron-form" id="signIn" method="post" action="/sessions")
+          gold-email-input(class="input" name="email" label="email" required auto-validate)
+          paper-input(class="input" type="password" name="password" label="password")
+        .buttons
+          paper-button(dialog-dismiss) 
+            | Cancelar
+          paper-button(dialog-confirm on-click="submitForm")
+            | Entrar
+      iron-ajax(
+        id='logInAjax'
+        url='/sessions',
+        method="POST",
+        content-type="application/json",
+        body='{{ajaxBody}}',
+        handle-as = 'json',
+        on-response = 'ajaxResponse',
+        debounce-duration = "300"
+        )
+  script(src="landing-form.js")

@@ -2,7 +2,7 @@ module API
   class PostsController < ApiController
 
     def index
-      @posts = Post.all
+      @posts = Post.limit(3)
 
       @postResponse = []
 

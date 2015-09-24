@@ -3,6 +3,7 @@ module.exports = function (grunt) {
     bsFiles: {
         src : [
           'app/views/**/*.html.erb',
+          'app/assets/**/*.scss',
           'app/assets/components/**/*.*'
         ]
     },

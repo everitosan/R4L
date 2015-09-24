@@ -49,3 +49,70 @@ a, a:visited {
     width: 95%;
   }
 }
+
+.pure-g [class *="pure-u"] {
+  font-family: "Hero Light";
+}
+
+#landing {
+  height: 100%;
+  article {
+    &>div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .intro {
+    background: image-url('other/landing.jpg');
+    background-size: cover;
+    color: white;
+    padding-bottom: 1em;
+
+    p {
+      font-size: 1.6em;
+      text-align: center;
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+  .info {
+    border-top: 1px solid #AFBCC2;
+    border-bottom: 1px solid #AFBCC2;
+  }
+  .reSubmit {
+    background: image-url('other/landing3.jpg');
+    background-size: cover;
+  }
+}
+
+footer {
+  text-align: center;
+  iron-image {
+    width: 48px;
+    height: 48px;
+    margin-top: 1em;
+  }
+  .socialMedia {
+    background: image-url('forms/linePink.png');
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #landing{
+    article {
+      padding-bottom: 0;
+    }
+    .intro {
+      p{
+        font-size: 2em;
+      }
+    }
+  }
+}

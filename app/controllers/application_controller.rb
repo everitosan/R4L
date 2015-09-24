@@ -10,11 +10,11 @@ class ApplicationController < ActionController::Base
     end
 
     def identity_signed_in?
-      warden.authenticate?(scope: :identity)
+      warden.authenticate?
     end
 
     def authenticate!
-      redirect_to root_path, notice: t('.not_logged') unless indetity_signed_in?
+      redirect_to root_path, notice: t('.not_logged') unless  identity_signed_in?
     end
 
     def warden_message

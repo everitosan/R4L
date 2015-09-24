@@ -28,3 +28,36 @@ Michael:
   country: USA
   telephone: 09388992
   picProfile: assets/profile/Michael.jpg
+
+Madyson:
+  name: Madyson
+  role: Pro
+  age: 35
+  email: madiAdi@gmail.com
+  address: somwhere only
+  zipCode: 23909
+  country: USA
+  telephone: 09388992
+  picProfile: assets/profile/Madyson.jpg
+  
+Rem:
+  name: Rem Ro
+  role: Pro
+  age: 35
+  email: remRo@gmail.com
+  address: somwhere only
+  zipCode: 23909
+  country: USA
+  telephone: 09388992
+  picProfile: assets/profile/pro.jpg
+
+Adelle:
+  name: Adelle
+  role: Pro
+  age: 35
+  email: adelle@gmail.com
+  address: somwhere only
+  zipCode: 23909
+  country: USA
+  telephone: 09388992
+  picProfile: assets/profile/pro2.jpg

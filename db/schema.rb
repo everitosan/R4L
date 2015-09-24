@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150919180711) do
+ActiveRecord::Schema.define(version: 20150922155051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -73,6 +73,14 @@ ActiveRecord::Schema.define(version: 20150919180711) do
 
   add_index "groups_users", ["group_id"], name: "index_groups_users_on_group_id", using: :btree
   add_index "groups_users", ["user_id"], name: "index_groups_users_on_user_id", using: :btree
+
+  create_table "identities", force: :cascade do |t|
+    t.string   "email"
+    t.string   "password_hash"
+    t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "payments", force: :cascade do |t|
     t.integer  "user_id"
@@ -153,6 +161,7 @@ ActiveRecord::Schema.define(version: 20150919180711) do
     t.string   "picProfile"
     t.float    "last_weight"
     t.float    "last_height"
+    t.string   "role"
   end
 
 end

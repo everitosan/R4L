@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get 'events'=>'event#show'
   get 'settings'=>'settings#index'
 
+  get 'professionals' => 'home#professionals'
+
   constraints subdomain: 'api' do
     namespace :api, path:'/' do
       with_options only: [:index, :create, :new, :edit, :show, :update, :destroy] do |list_only|

@@ -1,0 +1,44 @@
+:host
+  text-align center
+  &>div
+    background url('forms/detailLineGrayH.png')
+    background-repeat  no-repeat
+    background-position 0 100%
+    background-size 100% 1px
+  iron-image
+    height 140px
+    width 140px
+    display block
+    margin 0 auto
+  .separator-right
+    background url('forms/detailLineGrayV.png')
+    background-repeat  no-repeat
+    background-position 100% 0
+    background-size auto 100%
+  span
+    font-size 1.1em
+  .accent
+    font-family "Hero"
+    font-size 1.3em
+  .project
+    padding 1em 0
+    box-sizing content-box
+  paper-dialog
+    h2
+      background #356B91
+      margin 0
+      color white
+      span
+        position relative
+        top .5em
+        left 1.2em
+      paper-icon-button
+        float right
+
+@media screen and (max-width: 48em)
+  :host
+    .separator-right
+      background url('forms/detailLineGrayH.png')
+      background-repeat  no-repeat
+      background-position 0 100%
+      background-size 100% 1px

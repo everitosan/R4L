@@ -21,6 +21,3 @@
 #Ignore front end generated files
 /front-dev/dev
 /front-dev/prod
-/vendor/assets/components
-/app/assets/components
-/app/assets/images/profile

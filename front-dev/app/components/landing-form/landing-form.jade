@@ -23,12 +23,12 @@ dom-module#landing-form
         entry-animation="scale-up-animation")
         h2 Log in
         form(is="iron-form" id="signIn" method="post" action="/sessions")
-          gold-email-input(class="input" name="email" label="email" required auto-validate)
-          paper-input(class="input" type="password" name="password" label="password")
+          gold-email-input(class="input" name="email" label="email" value="{{username}}" required auto-validate)
+          paper-input(class="input" type="password" name="password" value="{{password}}" label="password")
         .buttons
           paper-button(dialog-dismiss) 
             | Cancelar
-          paper-button(dialog-confirm on-click="submitForm")
+          paper-button(on-click="submitForm")
             | Entrar
       iron-ajax(
         id='logInAjax'
@@ -37,7 +37,7 @@ dom-module#landing-form
         content-type="application/json",
         body='{{ajaxBody}}',
         handle-as = 'json',
-        on-response = 'ajaxResponse',
+        on-response = 'logInResponse',
         debounce-duration = "300"
         )
   script(src="landing-form.js")

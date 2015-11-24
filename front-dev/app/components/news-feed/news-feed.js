@@ -16,8 +16,7 @@ class NewsFeed {
       item.category = "assets/icons/" + item.category + ".png";
     });
 
-    let newsFeed = document.getElementById("newsFeed");
-    newsFeed.style.height  = "" + (window.innerHeight-125) + "px";
+  
 
   }
 }

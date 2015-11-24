@@ -17,11 +17,11 @@ var LandingForm = (function () {
       this.properties = {
         username: {
           is: String,
-          value: "everardo.ipn@gmail.com"
+          value: ""
         },
         password: {
           is: String,
-          value: "brenda2013"
+          value: ""
         },
         hideFooter: {
           is: Boolean,
@@ -46,9 +46,16 @@ var LandingForm = (function () {
       this.$.logInAjax.generateRequest();
     }
   }, {
-    key: "ajaxResponse",
-    value: function ajaxResponse(request) {
-      console.log(request.detail.response);
+    key: "logInResponse",
+    value: function logInResponse(request) {
+
+      console.log(request.detail.response.valid);
+      if (request.detail.response.valid == 'ok') {
+        location.reload();
+      } else {
+        this.username = '';
+        this.password = '';
+      }
     }
   }, {
     key: "processBody",

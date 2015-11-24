@@ -8,8 +8,10 @@
   <%= html_import_tag 'application'%>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
 </head>
+
 <body>
-  <%- if identity_signed_in? %>
+
+  <%- if !identity_signed_in? %>
     <section id="r4lApp">
       <template is="dom-bind" id="app">
 
@@ -24,28 +26,24 @@
             </paper-toolbar>
             <menu-component> </menu-component>
           </div>
-          <div main>
+          <div main class=pure-g"">
             <paper-toolbar>
 
               <main-header></main-header>
 
             </paper-toolbar>
-            <iron-grid>
-              <div id="main-cards" class="s12 m12 l9">
-                <counterdown-slider class="s12"></counterdown-slider>
-                <br><br><br><br>
-
+              <div id="main-cards" class="pure-u-1 pure-u-lg-18-24">
+                <counterdown-slider></counterdown-slider>
                 <%= yield %>
               </div>
-              <aside-bar></aside-bar>
-            </iron-grid>
+              <aside-bar class="pure-u-1 pure-u-lg-6-24"></aside-bar>
           </div>
         </paper-drawer-panel>
 
       </template>
     </section>
   <% else %>
-  
+
     <header class="mainHeader">
       <a id="logo" href="/">
         <img src="assets/other/logo.png" alt="R4Llogo">

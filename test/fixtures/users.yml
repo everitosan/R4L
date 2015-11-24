@@ -1,7 +1,7 @@
 Allan:
   name: Alan Vaca Strella
   age: 20
-  email: alan@gmail.com
+  email: everardo.ipn@gmail.com
   address: somwhere
   zipCode: 14000
   country: méxico
@@ -39,7 +39,7 @@ Madyson:
   country: USA
   telephone: 09388992
   picProfile: assets/profile/Madyson.jpg
-  
+
 Rem:
   name: Rem Ro
   role: Pro

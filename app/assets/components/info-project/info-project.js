@@ -5,21 +5,21 @@ var _createClass = (function () { function defineProperties(target, props) { for
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var LandingProfessionals = (function () {
-  function LandingProfessionals() {
-    _classCallCheck(this, LandingProfessionals);
+var InfoProject = (function () {
+  function InfoProject() {
+    _classCallCheck(this, InfoProject);
   }
 
-  _createClass(LandingProfessionals, [{
+  _createClass(InfoProject, [{
     key: "beforeRegister",
     value: function beforeRegister() {
-      this.is = "landing-professionals";
+      this.is = "info-project";
     }
   }]);
 
-  return LandingProfessionals;
+  return InfoProject;
 })();
 
-Polymer(LandingProfessionals);
+Polymer(InfoProject);
 
 },{}]},{},[1]);

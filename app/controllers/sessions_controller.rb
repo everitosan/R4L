@@ -1,17 +1,22 @@
 class SessionsController < ApplicationController
-#  respond_to :json
   def new
-    @identity = Identity.new
+
+    respond_to do |format|
+      if  identity_signed_in?
+        format.json {render json: {:valid => 'ok'}, status: :ok }
+      else
+        format.json {render json: {:valid => 'no'}, status: :ok}
+      end
+
+    end
   end
 
   def create
-    logger.debug "*"*50
-    #logger.debug params :identity
-  #  logger.debug params['identity']['password']
-    logger.debug "*"*50
-
-    warden.authenticate!
-    redirect_to root_url, notice: t('.logged_in')
+    
+    warden.authenticate!(scope: :identity)
+      respond_to do |format|
+        format.json {render json: {:valid => 'ok'}, status: :ok }
+      end
   end
 
   def destroy

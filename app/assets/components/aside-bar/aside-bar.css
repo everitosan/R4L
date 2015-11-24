@@ -1,1 +1,1 @@
-:host h3{text-align:right;color:#356b91}
+:host{padding:0 15px;box-sizing:border-box;border-left:#afbcc2 3px solid;height:100%;}:host #adds{overflow:scroll;height:100%;}:host #adds .add{display:block;margin:1em auto;background:#fff;height:150px}:host h3{text-align:right;color:#356b91}

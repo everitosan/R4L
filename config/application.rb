@@ -29,7 +29,6 @@ module Project
     'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
     }
     config.assets.enabled = false
-    config.navigational_formats = ["*/*", :html, :json]
     
   end
 end

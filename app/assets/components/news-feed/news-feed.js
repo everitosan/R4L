@@ -30,9 +30,6 @@ var NewsFeed = (function () {
       request.detail.response.forEach(function (item) {
         item.category = "assets/icons/" + item.category + ".png";
       });
-
-      var newsFeed = document.getElementById("newsFeed");
-      newsFeed.style.height = "" + (window.innerHeight - 125) + "px";
     }
   }]);
 

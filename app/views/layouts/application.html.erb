@@ -11,7 +11,7 @@
 
 <body>
 
-  <%- if identity_signed_in? %>
+  <%- if !identity_signed_in? %>
     <section id="r4lApp">
       <template is="dom-bind" id="app">
 

@@ -4,11 +4,11 @@ class LandingForm {
     this.properties = {
       username: {
         is: String,
-        value: "everardo.ipn@gmail.com"
+        value: ""
       },
       password: {
         is: String,
-        value: "brenda2013"
+        value: ""
       },
       hideFooter: {
         is: Boolean,
@@ -30,8 +30,17 @@ class LandingForm {
     //form.submit();
     this.$.logInAjax.generateRequest();
   }
-  ajaxResponse (request) {
-    console.log( request.detail.response );
+
+  logInResponse (request) {
+
+    console.log( request.detail.response.valid );
+    if (request.detail.response.valid == 'ok') {
+      location.reload();
+    }
+    else {
+      this.username = '';
+      this.password = '';
+    }
   }
 
   processBody (username, password) {
